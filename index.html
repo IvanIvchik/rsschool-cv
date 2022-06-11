@@ -2,14 +2,198 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cv</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivan Ivchik CV</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
-    <h1>Ivan Ivchik</h1>
+    <header>
+        <div class="top-nav">
+            <div class="menu-icon">
+                <span></span>
+            </div>
+        </div>
+        <nav class="menu-burger">
+            <ul>
+                <li class="link-burger-menu">
+                    <a href="#summary">summary</a>
+                </li>
+                <li class="link-burger-menu">
+                    <a href="#skills">my skills</a>
+                </li>
+                <li class="link-burger-menu">
+                    <a href="#contacts">contacts</a>
+                </li>
+                <li class="link-burger-menu">
+                    <a href="#code">code example</a>
+                </li>
+                <li class="link-burger-menu">
+                    <a href="#education">education</a>
+                </li>
+                <li class="link-burger-menu">
+                    <a href="#languages">english level</a>
+                </li>
+                <li class="link-burger-menu">
+                    <a href="#my-projects">my projects</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <nav class="full-resolution">
+                <ul>
+                    <li><a href="#contacts">contacts</a></li>
+                    <li><a href="#summary">summary</a></li>
+                    <li><a href="#skills">my skills</a></li>
+                    <li><a href="#code">code example</a></li>
+                    <li><a href="#education">education</a></li>
+                    <li><a href="#my-projects">my projects</a></li>
+                </ul>
+            </nav>
+            <section id="profile">
+                <div class="photo">
+                    <img src="./assets/photo_2021-12-29_20-26-49.jpg" alt="avatar" />
+                </div>
+                <div class="basic-information">
+                    <h1>Ivan Ivchik</h1>
+                    <h2>Beginning Front-end Developer</h2>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="contacts">
+                <h2 class="titles-cv">Contacts</h2>
+                <span></span>
+                <ul>
+                    <li>
+                        <h5>Minsk, Belarus</h5>
+                    </li>
+                    <li>
+                        <h5>Phone</h5>
+                        <a href="tel:+37533385718">+37533385718</a>
+                    </li>
+                    <li>
+                        <h5>Discorde</h5>
+                        <a href="https://discord.gg/D7uh5kvm">IvanIvchik</a>
+                    </li>
+                    <li>
+                        <h5>Telegram</h5>
+                        <a href="https://t.me/geroinovayshluha">@geroinovayshluha</a>
+                    </li>
+                    <li>
+                        <h5>Email</h5>
+                        <a href="mailto:ivanivchik11@gmail.com">ivanivchik11@gmail.com</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="summary">
+                <h2 class="titles-cv">Summary</h2>
+                <span></span>
+                <p>
+                    I am 27 years old. I want to learn the basics of front-end
+                    development. No work experience, but I am aware of my interest in
+                    this area. I went to these courses to learn and understand whether
+                    this specialty suits me and whether I can do it. To gain experience
+                    and acquire a couple of projects made by me.
+                </p>
+            </section>
+            <section id="skills">
+                <h2 class="titles-cv">My skills</h3>
+                    <span></span>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>Git</li>
+                    </ul>
+            </section>
+
+            <section id="code">
+                <h2>Code example</h2>
+                <span></span>
+                <pre><code>
+            function solution(number){
+              let sum = 0;
+              for (let i = 0; i < number; i++){
+                if (i % 3 == 0 || i % 5 == 0) sum += i;
+              }
+              return sum;
+            }
+            </code></pre>
+            </section>
+
+            <section id="education">
+                <h2 class="titles-cv">Education</h2>
+                <span></span>
+                <h5>BSUIR</h5>
+                <p>Faculty of Telecommunications</p>
+            </section>
+
+            <section id="languages">
+                <h2>English</h2>
+                <span></span>
+                <h5>А1 Basic</h5>
+            </section>
+
+            <section id="my-projects">
+                <h2 class="titles-cv">My projects</h2>
+                <span></span>
+                <div class="project-list">
+                    <div class="project">
+                        <div class="project-link">
+                            <a href="https://ivanivchik.github.io/memoryGame/"><img src="./assets/prevwe/game.JPG"
+                                    alt="game"></a>
+                        </div>
+                        <h3 class="project-name">Memory game</h3>
+                        <p class="project-overwe">HTML, CSS, JS</p>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-link">
+                            <a href="https://ivanivchik.github.io/shelter/pages/main/"><img
+                                    src="./assets/prevwe/shelter.JPG" alt="shelter"></a>
+                        </div>
+                        <h3 class="project-name">Shelter</h3>
+                        <p class="project-overwe">HTML, CSS, JS</p>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-link">
+                            <a href="https://ivanivchik.github.io/portfolio"><img src="./assets/prevwe/portfolio.JPG"
+                                    alt="portfolio"></a>
+                        </div>
+                        <h3 class="project-name">Portfolio</h3>
+                        <p class="project-overwe">HTML, CSS, JS</p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>2022</p>
+            <a href="https://github.com/IvanIvchik">
+                <img src="./assets/github.png" alt="my github" style="height: 50px; width: auto" />
+            </a>
+            <a href="https://rs.school/js/">
+                <img src="./assets/rs_school_js.svg" alt="rs.school" style="height: 50px; width: auto" />
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
+
 </html>
