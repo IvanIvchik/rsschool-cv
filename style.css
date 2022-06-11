@@ -1,3 +1,386 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h5 {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+p,
+a,
+li {
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
-    background-color: rgb(161, 161, 161);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+}
+
+.top-nav,
+.menu-burger {
+    display: none;
+}
+
+.full-resolution {
+    height: 50px;
+}
+
+.full-resolution ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto 0;
+    height: 100%;
+}
+
+.full-resolution li {
+    list-style: none;
+    padding-left: 20px;
+    font-size: 20px;
+    align-self: center;
+}
+
+.full-resolution a {
+    color: #fff;
+}
+
+.full-resolution a:hover,
+.full-resolution a:active {
+    color: #708090;
+}
+
+main {
+    padding: 40px 0 10px;
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+#profile div {
+    width: 50%;
+}
+
+.photo img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    width: 300px;
+    height: auto;
+}
+
+.basic-information {
+    color: #fff;
+}
+
+h1,
+h2:not(.titles-cv) {
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.titles-cv {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+section span {
+    display: block;
+    width: 250px;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+main section {
+    width: 45%;
+    height: auto;
+    border-bottom: 2px solid rgba(112, 112, 112, 0.5);
+    padding: 30px 0;
+}
+
+section ul,
+section p,
+section h5 {
+    padding-left: 30px;
+}
+
+#contacts li {
+    display: flex;
+}
+
+#contacts li h5 {
+    padding-right: 20px;
+}
+
+#contacts a {
+    display: block;
+    color: black;
+    font-weight: 300;
+}
+
+#contacts a:hover,
+#contacts a:active {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#skills li {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    list-style-type: square;
+}
+
+pre {
+    background-color: rgba(112, 112, 112, 0.1);
+    padding: 0;
+}
+
+footer {
+    background-color: rgba(112, 112, 112, 0.1);
+    padding: 20px 0;
+    border-top: 2px solid #000;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+@media (max-width: 1024px) {
+    .full-resolution ul {
+        margin: auto 0;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .full-resolution li {
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    #profile div {
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    section ul,
+    section p,
+    section h5 {
+        padding-left: 0;
+    }
+
+    #skills li {
+        list-style-type: none;
+    }
+
+    .photo img {
+        height: 200px;
+        width: auto;
+    }
+
+    main section {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo img {
+        display: inline;
+    }
+
+    header .container {
+        padding-top: 35px;
+    }
+
+    .full-resolution {
+        display: none;
+    }
+
+    .top-nav {
+        position: fixed;
+        width: 100%;
+        height: 35px;
+        z-index: 5;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .menu-icon {
+        position: relative;
+        height: 60%;
+        width: 5%;
+        right: 15px;
+        margin: auto 0;
+        z-index: 5;
+    }
+
+    .menu-icon span,
+    .menu-icon::before,
+    .menu-icon::after {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 15%;
+        transition: all 0.4s ease 0s;
+    }
+
+    .menu-icon::before,
+    .menu-icon::after {
+        content: "";
+    }
+
+    .menu-icon::before {
+        top: 0;
+    }
+
+    .menu-icon::after {
+        bottom: 0;
+    }
+
+    .menu-icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .menu-icon.active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+
+    .menu-icon.active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .menu-icon.active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .menu-burger {
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding-top: 30px;
+        overflow: auto;
+        transition: top 0.4s ease 0s;
+    }
+
+    .menu-burger.active {
+        top: 0;
+    }
+
+    .menu-burger li {
+        list-style: none;
+    }
+
+    .menu-burger a {
+        padding: 0;
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        text-align: start;
+        display: inline-block;
+        padding: 15px 0 15px 30px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .menu-burger a:hover {
+        background-color: #000;
+    }
+
+    body.lock {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 500px) {
+    .photo {
+        display: none;
+    }
+
+    .menu-icon {
+        width: 8%;
+        right: 10px;
+    }
+
+    #profile div {
+        width: 100%;
+    }
+
+    pre {
+        font-size: 8px;
+    }
+
+    .menu-burger a {
+        font-size: 24px;
+    }
 }
