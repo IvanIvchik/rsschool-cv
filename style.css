@@ -243,6 +243,11 @@ footer a {
     width: auto;
 }
 
+footer img {
+    height: 50px; 
+    width: auto
+}
+
 @media (max-width: 1024px) {
     .full-resolution ul {
         margin: auto 0;
